@@ -15,6 +15,7 @@ def listar_produtos():
 
 # Rota para adicionar um novo produto (POST)
 @app.route('/produtos', methods=['POST'])
+
 def adicionar_produto():
     novo_produto = request.get_json()
     produtos.append(novo_produto)
